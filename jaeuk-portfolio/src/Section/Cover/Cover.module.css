@@ -1,0 +1,45 @@
+.cover {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.textWrapper {
+  display: flex;
+  gap: 0.25em;
+  perspective: 1000px; 
+}
+
+.char {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.caption {
+  position: absolute;
+  top: 37%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .char { font-size: 5.6rem; }
+}
+@media (max-width: 600px) {
+  .char { font-size: 4.2rem; }
+}
+
