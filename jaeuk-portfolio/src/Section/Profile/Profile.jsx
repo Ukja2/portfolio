@@ -3,7 +3,7 @@ import styles from "./Profile.module.css";
 import { FaGithub, FaBloggerB } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
-function Profile() {
+export default function Profile() {
     return (
         <section id="profile" className={styles.profileSection}>
             <h1 className={styles.title}>Profile</h1>
@@ -68,4 +68,4 @@ function Profile() {
     );
 }
 
-export default Profile;
+

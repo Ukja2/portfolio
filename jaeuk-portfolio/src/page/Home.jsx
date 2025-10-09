@@ -7,7 +7,7 @@ import styles from "./Home.module.css";
 import Cover from "../Section/Cover/Cover";
 import Profile from "../Section/Profile/Profile";
 
-function Home() {
+export default function Home() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const { scrollYProgress } = useScroll();
 
@@ -37,4 +37,3 @@ function Home() {
   );
 }
 
-export default Home;
