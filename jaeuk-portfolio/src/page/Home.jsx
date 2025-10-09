@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import styles from "./Home.module.css";  
 import Cover from "../Section/Cover/Cover";
 import Profile from "../Section/Profile/Profile";
+import Skills from "../Section/Skills/Skills";
 
 export default function Home() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -33,6 +34,7 @@ export default function Home() {
 
       <Cover />
       <Profile isSmallScreen={isSmallScreen} />
+      <Skills/>
     </>
   );
 }
