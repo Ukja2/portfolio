@@ -29,7 +29,7 @@ export const SkillsData = {
       name: "JavaScript",
       icon: javascript,
       details: [
-        "ES6+ 문법 적극 활용 (화살표 함수, 구조분해 등)",
+        "ES6+ 문법 적극 활용",
       ],
     },
     {
@@ -39,9 +39,10 @@ export const SkillsData = {
         "Custom Hook 제작 및 재사용",
         "Zustand로 상태 관리 구현",
         "React Hook Form으로 폼 처리 및 유효성 검사",
+        "Framer Motion, AOS 등 인터랙션 라이브러리 활용",
         "PWA 프로젝트 구성 경험",
         "Axios 기반 API 통신",
-        "외부 SDK 연동 경험",
+        "외부 SDK 활용 경험",
       ],
     },
   ],
@@ -53,7 +54,6 @@ export const SkillsData = {
       details: [
         "GitHub 연동 자동 배포 구성",
         "환경변수 설정 및 도메인 연결",
-        "빌드 최적화 및 CI/CD 구성 이해",
       ],
     },
   ],
