@@ -42,9 +42,12 @@ export default function Skills() {
   const moveRight = () => setIndex((i) => Math.min(last, i + 1));
 
   const offsetX =
-    skills.length === 1
-      ? 0 
-      : containerW / 2 - index * slide - slide / 2 + 60;
+    skills && skills.length > 0
+      ? (skills.length === 1
+        ? 0
+        : containerW / 2 - index * slide - slide / 2 + 60)
+      : 0;
+
 
   return (
     <section
@@ -113,19 +116,22 @@ export default function Skills() {
         </button>
       </div>
 
-      <div
-        className={styles.desc}
-        data-aos="fade-up"
-        data-aos-delay="120"
-        data-aos-duration="600"
-      >
-        <h3>{skills[index].name}</h3>
-        <ul>
-          {skills[index].details.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
-        </ul>
-      </div>
+      {skills && skills[index] && (
+        <div
+          className={styles.desc}
+          data-aos="fade-up"
+          data-aos-delay="120"
+          data-aos-duration="600"
+        >
+          <h3>{skills[index].name}</h3>
+          <ul>
+            {skills[index].details.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
     </section>
   );
 }
